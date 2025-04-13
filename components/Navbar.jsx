@@ -1,8 +1,14 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNav = () => setIsOpen(!isOpen);
+
   return (
     <nav className="navbar">
       <div className="nav-logo-wrapper">
@@ -13,7 +19,14 @@ const Navbar = () => {
           height={48}
         />
       </div>
-      <div className="nav-links-wrapper">
+
+      <div className="hamburger" onClick={toggleNav}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div className={`nav-links-wrapper ${isOpen ? "active" : ""}`}>
         <ul>
           <li>
             <Link href="/about">About</Link>

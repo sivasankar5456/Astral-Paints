@@ -26,8 +26,8 @@ const serviceCard_data = [
 const Service = ({ data }) => {
   return (
     <div className="service-component">
-      <div className="about-text-wrapper">
-        <p className="about-title">
+      <div className="common-text-wrapper">
+        <p className="common-title">
           {data?.homeServicesSubtitle ? data?.homeServicesSubtitle : `Services`}
         </p>
 

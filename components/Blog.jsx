@@ -27,8 +27,8 @@ const blogCard_data = [
 const Blog = () => {
   return (
     <div className="blog-component">
-      <div className="about-text-wrapper">
-        <p className="about-title">Our Blog</p>
+      <div className="common-text-wrapper">
+        <p className="common-title">Our Blog</p>
 
         <div className="heading-wrapper">
           <h1 className="heading">Latest</h1>
@@ -50,7 +50,7 @@ const Blog = () => {
             <Image
               src={"/images/Rectangle 66.png"}
               alt="blog image"
-              height={487}
+              height={400}
               width={469}
               className="featured-image"
             />

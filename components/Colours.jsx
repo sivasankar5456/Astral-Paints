@@ -15,8 +15,8 @@ const Colours = ({ data }) => {
   const [activeIndex, setActiveIndex] = useState(1);
   return (
     <div className="colours-component">
-      <div className="about-text-wrapper">
-        <p className="about-title">
+      <div className="common-text-wrapper">
+        <p className="common-title">
           {data?.homeColoursSubtitle ? data?.homeColoursSubtitle : `Colours`}
         </p>
 

@@ -31,8 +31,8 @@ export const Category = ({ data }) => {
 
   return (
     <div className="category-component">
-      <div className="about-text-wrapper">
-        <p className="about-title">Category</p>
+      <div className="common-text-wrapper">
+        <h3 className="common-title">Category</h3>
 
         <div className="heading-wrapper">
           <h1 className="heading">

@@ -13,9 +13,9 @@ const About = ({
   },
 }) => {
   return (
-    <div className="about-component">
-      <div className="about-text-wrapper" style={{paddingTop:'100px',}}  >
-        <p className="about-title">{data?.homeAboutSubtitle}</p>
+    <div className="about-component" >
+      <div className="common-text-wrapper" style={{paddingTop:'50px',}}  >
+        <p className="common-title">{data?.homeAboutSubtitle}</p>
 
         <div className="heading-wrapper">
           <h1 className="heading">{data?.homeAboutTitle}</h1>
@@ -57,7 +57,7 @@ const About = ({
           style={{ color: "#E70000", border: "solid 1px #E70000" }}
         />
       </div>
-      <div style={{height:'683px'}}>
+      <div style={{height:'600px'}}>
       <Image
         src={
           data?.homeAboutVideoImage?.node?.sourceUrl

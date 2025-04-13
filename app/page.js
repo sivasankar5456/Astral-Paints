@@ -47,21 +47,27 @@ export default async function Home() {
             <div className="componet-layout">
               <About data={aboutData} />
             </div>
+
             <div className="componet-layout">
               <Category data={homepageData} />
             </div>
+
             <div className="componet-layout">
               <Service data={homepageData} />
             </div>
+
             <div className="componet-layout">
               <Colours data={homepageData} />
             </div>
+
             <div className="componet-layout">
               <Dealer />
             </div>
+
             <div className="componet-layout" style={{ paddingBottom: "70px" }}>
               <Blog />
             </div>
+
           </div>
         </section>
       </section>
@@ -69,7 +75,3 @@ export default async function Home() {
     </div>
   );
 }
-
-// const res = await axios.post("https://astralpaints.kwebmakerdigitalagency.com/graphql", { query });
-
-// const data = await res.data.data;
