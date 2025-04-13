@@ -14,7 +14,7 @@ import { getData, homePageEndpoint, QUERY } from "@/services";
 export default async function Home() {
   const data = await getData(homePageEndpoint, QUERY);
   const homepageData = data?.pages?.nodes[0]?.homepage;
-  console.log(data);
+
   const aboutData = {
     homeAboutTitle: homepageData?.homeAboutTitle,
     homeAboutSubtitle: homepageData?.homeAboutSubtitle,
