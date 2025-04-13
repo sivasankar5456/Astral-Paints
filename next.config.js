@@ -1,8 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-      domains: ['astralpaints.kwebmakerdigitalagency.com'],
-    },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'astralpaints.kwebmakerdigitalagency.com',
+      },
+    ],
+  },
   };
   
   module.exports = nextConfig;
